@@ -1,0 +1,142 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/CardView.Light"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="8dp"
+    android:layout_marginEnd="8dp">
+
+    <android.support.constraint.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:id="@+id/user_image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/green_circle"
+            android:padding="12dp"
+            android:src="@drawable/ic_person_black"
+            app:layout_constraintBottom_toTopOf="@+id/title_text"
+            app:layout_constraintEnd_toStartOf="@+id/user_name_text"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/user_name_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:text="Hernádez López César Erick"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#DE000000"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/institute_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/user_image_id"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/institute_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:lineSpacingExtra="8dp"
+            android:text="Date"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#8A000000"
+            app:layout_constraintBottom_toTopOf="@+id/title_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toEndOf="@+id/user_image_id"
+            app:layout_constraintTop_toBottomOf="@+id/user_name_text" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:text="Title of your complain "
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#DE000000"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toTopOf="@+id/subtitle_text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/institute_text" />
+
+        <TextView
+            android:id="@+id/subtitle_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:text="Instute"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#8A000000"
+            app:layout_constraintBottom_toTopOf="@+id/media_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_text" />
+
+        <ImageView
+            android:id="@+id/media_image"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="8dp"
+            android:background="#8ab1adad"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/supporting_text"
+            app:layout_constraintDimensionRatio="H,16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/subtitle_text" />
+
+        <TextView
+            android:id="@+id/supporting_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:lineSpacingExtra="8dp"
+            android:text="text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#DE000000"
+            app:layout_constraintBottom_toTopOf="@+id/user_image_id"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/media_image" />
+
+
+        <ImageButton
+            android:id="@+id/hard_image_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/yellow_circle"
+            android:padding="10dp"
+            android:src="@drawable/ic_like_black_24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/supporting_text" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v7.widget.CardView>
